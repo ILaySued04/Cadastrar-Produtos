@@ -24,20 +24,20 @@ h1{
     font-weight: 900;
 }
 
-div{
+.div-cadastro{
     margin-top: 40px;
     margin-left: 7%;
     margin-bottom: 40px;
 }
 
-button{
+#btncadastrar{
     background-color: rgb(34, 34, 104);
     margin-left: 48% !important;
     color: white;
     margin-bottom: 30px !important;
 }
 
-button:hover{
+#btncadastrar:hover{
     color: aliceblue;
     background-color: blue;
 }
