@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produtos</title>
+    <link rel="icon" type="imagem/png" href="./img/3534124.png" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <main>
+        <h1>Cadastre seu produto!</h1>
+        <div>
+            
+            <label for="produto">Link da imagem:</label>
+            <input id="imagem" type="text" required>
+            <label for="produto">Produto:</label>
+            <input id="produto" type="text" required>
+            <span class="mensagem-p" id="msg-produto">
+                <p>Por favor digite o nome do produto</p>
+            </span>
+            <label for="quantidade">Quantidade:</label>
+            <input id="quantidade" type="number" min="0" required>
+            <span class="mensagem-q" id="msg-quantidade">
+                <p>Por favor digite a quantidade do produto</p>
+            </span>
+            <label for="descrição">Descrição:</label>
+            <input id="descricao" type="text" required>
+            <label for="preco">Preço:</label>
+            <input id="preco" type="number" min="0" required>
+            <span class="mensagem-r" id="msg-preco">
+                <p>Por favor digite o preço do produto</p>
+            </span>
+            <label for="categoria">Categorias:</label>
+            <select id="categoria">
+                <option value="Frutas e Verduras">Frutas e Verduras</option>
+                <option value="Cereas">Cereas</option>
+                <option value="Hortaliças">Hortaliças</option>
+                <option value="Leite e Derivados">Leite e Derivados</option>
+            </select>
+        </div>
+
+        <button id="btncadastrar">Cadastrar</button>
+ 
+        
+        <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+              <tr>
+                <th>Produto</th>
+                <th>Descrição</th>
+                <th>Status</th>
+                <th>Categoria</th>
+                <th>Quantidade</th>
+                <th>Preço Unitário</th>
+                <th>Preço Total</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+
+    </main>
+
+    
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js" ></script>
+<script src="./index.js" ></script>
+</body>
+</html>

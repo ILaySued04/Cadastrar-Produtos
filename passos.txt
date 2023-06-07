@@ -1,0 +1,2 @@
+1°Passo
+-Pegar os valores dentro dos inputs
